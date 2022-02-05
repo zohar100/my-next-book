@@ -9,11 +9,9 @@ import cors from 'cors';
 import { graphqlHTTP } from 'express-graphql';
 import  { schema } from './schema/index';
 import db from './config/database';
-import dotenv from 'dotenv';
 
 const main = async () => {
 
-    dotenv.config();
 
     // Test database connection
     db.authenticate()
